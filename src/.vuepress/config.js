@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Tpyerefinery Docs",
+  title: "TypeRefinery Docs",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -39,9 +39,9 @@ module.exports = {
     lastUpdated: "Last Updated",
     algolia: {
       indexName: "Demo",
-      apiKey: "3d5fe2d1d68adda7787ceb7fb21ad72a",
+      apiKey: process.env.SEARCH_API_KEY,
 
-      appId: "3HSP2MEZNG",
+      appId: process.env.APPLICATION_ID,
       // If Algolia did not provided you any `appId`, use `BH4D9OD16A` or remove this option
     },
     nav: [
@@ -49,17 +49,13 @@ module.exports = {
         text: "Guide",
         link: "/guide/",
       },
-      // {
-      //   text: "Text",
-      //   link: "/text/",
-      // },
       {
         text: "Feature",
         link: "/feature/",
       },
       {
         text: "GitHub",
-        link: "https://github.com/innovolve-ai",
+        link: "https://github.com/innovolve-ai/typerefinery.ai",
       },
     ],
     sidebar: {
