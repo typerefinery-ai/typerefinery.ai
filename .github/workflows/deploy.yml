@@ -44,13 +44,9 @@ jobs:
         branch: gh-pages
         folder: src/.vuepress/dist
 
-    - name: Wait for job "pages build and deployment" to succeed
-      uses: lewagon/wait-on-check-action@v1.0.0
-      with:
-        ref: main
-        check-name: 'pages-build-deployment'
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        wait-interval: 90
+    - name: Sleep for 90 seconds waiting for job 'pages build and deployment' to finish
+      run: sleep 90s
+      shell: bash
         
     - name: Get config
       run: |
