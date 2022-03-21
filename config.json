@@ -1,10 +1,10 @@
 {
     "index_name": "Demo",
     "start_urls": [
-      "http://localhost:8080/"
+      "http://host.docker.internal:8080/"
     ],
     "sitemap_urls": [
-      "http://localhost:8080/sitemap.xml"
+      "http://host.docker.internal:8080/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [],
