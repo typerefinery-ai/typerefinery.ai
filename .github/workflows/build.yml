@@ -6,12 +6,11 @@ on:
       - '!master'
 
 jobs:  
-  deploy:
+  build:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     env:
       NODE_ENV: "development"
-      NODE_OPTIONS: "--openssl-legacy-provider"
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -21,7 +20,7 @@ jobs:
         node-version: '17'
 
     - name: NPM Install
-      run: npm install
+      run: export NODE_OPTIONS=--openssl-legacy-provider && npm install
 
     - name: Run Build
-      run: npm run build
+      run: export NODE_OPTIONS=--openssl-legacy-provider && npm run build
