@@ -52,6 +52,15 @@ jobs:
       run: |
         echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
 
+    - name: Test connection to Algolia API
+      env:
+        CONFIG: "${{ env.CONFIG }}"
+        APPLICATION_ID: "${{ secrets.APPLICATION_ID }}:"
+        API_KEY: "${{ secrets.API_KEY }}"
+      run: |
+        docker run -e CONFIG -e APPLICATION_ID -e API_KEY --entrypoint="" algolia/docsearch-scraper bash -c 'curl -X GET -H "X-Algolia-API-Key: ${API_KEY}" -H "X-Algolia-Application-Id: ${APPLICATION_ID}" https://${APPLICATION_ID}.algolia.net/1/indexes/typerefinery.ai'
+
+
     - name: Manually index site
       env:
         CONFIG: "${{ env.CONFIG }}"
