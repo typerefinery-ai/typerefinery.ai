@@ -1,4 +1,16 @@
 # TypeRefinery.ai
+## Run Setup
+
+```sh
+# clone the project
+git clone  https://github.com/innovolve-ai/typerefinery.ai.git
+
+# install dependency
+npm install
+
+# develop
+npm run dev
+```
 
 ## Run Crawl
 
