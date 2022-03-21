@@ -26,8 +26,7 @@ jobs:
 
     - name: Manually index site
       uses: docker://algolia/docsearch-scraper
-      with:
-        environment:
-          CONFIG: "$(cat ./config.json | jq -r tostring)"
-          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
+      env:
+        CONFIG: "$(cat ./config.json | jq -r tostring)"
+        APPLICATION_ID: "${{ secrets.APPLICATION_ID }}:"
+        API_KEY: "${{ secrets.API_KEY }}"
