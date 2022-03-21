@@ -1,44 +1,31 @@
 {
-    "index_name": "Demo",
+    "index_name": "TypeRefinery.ai",
     "start_urls": [
-      "http://host.docker.internal:8080/"
+      "https://typerefinery.ai/"
     ],
     "sitemap_urls": [
-      "http://host.docker.internal:8080/sitemap.xml"
+     
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [],
     "selectors": {
       "lvl0": {
-        "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
-        "type": "xpath",
+        "selector": ".nav-link",
         "global": true,
         "default_value": "Documentation"
       },
-      "lvl1": "header h1",
-      "lvl2": "article h2",
-      "lvl3": "article h3",
-      "lvl4": "article h4",
-      "lvl5": "article h5, article td:first-child",
-      "lvl6": "article h6",
-      "text": "article p, article li, article td:last-child"
+      "lvl1": ".content__default h1",
+      "lvl2": ".content__default h2",
+      "lvl3": ".content__default h3",
+      "lvl4": ".content__default h4",
+      "lvl5": ".content__default h5",
+      "text": ".content__default p, .content__default li"
     },
+    "scrape_start_urls": false,
     "strip_chars": " .,;:#",
     "custom_settings": {
-      "separatorsToIndex": "_",
       "attributesForFaceting": [
-        "language",
-        "version",
-        "type",
-        "docusaurus_tag"
-      ],
-      "attributesToRetrieve": [
-        "hierarchy",
-        "content",
-        "anchor",
-        "url",
-        "url_without_anchor",
-        "type"
+        "tags"
       ]
     },
     "conversation_id": [
