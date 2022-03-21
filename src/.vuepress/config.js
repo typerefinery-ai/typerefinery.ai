@@ -39,9 +39,8 @@ module.exports = {
     lastUpdated: "Last Updated",
     algolia: {
       indexName: "Demo",
-      apiKey: process.env.SEARCH_API_KEY,
-
-      appId: process.env.APPLICATION_ID,
+      apiKey: "5792a907c238f1c51eadbc3816abd9a1",
+      appId: "2PR5B0W9C6",
       // If Algolia did not provided you any `appId`, use `BH4D9OD16A` or remove this option
     },
     nav: [
