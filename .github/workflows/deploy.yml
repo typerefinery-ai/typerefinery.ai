@@ -8,7 +8,7 @@ jobs:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     env:
-      NODE_ENV: development
+      NODE_ENV: production 
       APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
       API_KEY: ${{ secrets.API_KEY }}
     steps:
