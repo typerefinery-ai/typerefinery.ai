@@ -9,7 +9,7 @@
   },
   "repository": "/vue-press-demo",
   "scripts": {
-    "dev": "vuepress dev src",
+    "dev": "vuepress dev src --host 0.0.0.0",
     "build": "vuepress build src"
   },
   "license": "MIT",
