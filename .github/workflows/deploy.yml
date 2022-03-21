@@ -24,9 +24,13 @@ jobs:
         BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: src/.vuepress/dist
 
+    - name: Get config
+      run: |
+        echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
+
     - name: Manually index site
       uses: docker://algolia/docsearch-scraper
       env:
-        CONFIG: "$(cat ./config.json | jq -r tostring)"
+        CONFIG: "${{ env.CONFIG }}"
         APPLICATION_ID: "${{ secrets.APPLICATION_ID }}:"
         API_KEY: "${{ secrets.API_KEY }}"
