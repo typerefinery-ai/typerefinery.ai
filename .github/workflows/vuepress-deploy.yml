@@ -17,5 +17,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.github_token }}
         TARGET_REPO: innovolve-ai/typerefinery.ai
         TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: yarn && yarn build
+        BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: src/.vuepress/dist
