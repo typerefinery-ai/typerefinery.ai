@@ -18,19 +18,27 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: ${{ secrets.github_token }}
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         TARGET_REPO: innovolve-ai/typerefinery.ai
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: src/.vuepress/dist
 
+    - name: Wait for tests to succeed
+      uses: lewagon/wait-on-check-action@v1.0.0
+      with:
+        ref: ${{ github.ref }}
+        check-name: 'pages build and deployment'
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        wait-interval: 10
+        
     - name: Get config
       run: |
         echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
 
     - name: Manually index site
-      uses: docker://algolia/docsearch-scraper
       env:
         CONFIG: "${{ env.CONFIG }}"
         APPLICATION_ID: "${{ secrets.APPLICATION_ID }}:"
         API_KEY: "${{ secrets.API_KEY }}"
+      run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
