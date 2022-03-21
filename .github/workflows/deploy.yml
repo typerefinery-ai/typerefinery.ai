@@ -25,7 +25,7 @@ jobs:
         BUILD_DIR: src/.vuepress/dist
 
     - name: Manually index site
-      usess: docker://algolia/docsearch-scraper
+      uses: docker://algolia/docsearch-scraper
       with:
         environment:
           CONFIG: "$(cat ./config.json | jq -r tostring)"
