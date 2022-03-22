@@ -1,4 +1,15 @@
 # TypeRefinery.ai
+
+[![Deploy](https://github.com/innovolve-ai/typerefinery.ai/actions/workflows/deploy.yml/badge.svg)](https://github.com/innovolve-ai/typerefinery.ai/actions/workflows/deploy.yml)
+[![Build](https://github.com/innovolve-ai/typerefinery.ai/actions/workflows/build.yml/badge.svg)](https://github.com/innovolve-ai/typerefinery.ai/actions/workflows/build.yml)
+[![github license](https://img.shields.io/github/license/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai) 
+[![github issues](https://img.shields.io/github/issues/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai) 
+[![github last commit](https://img.shields.io/github/last-commit/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai) 
+[![github repo size](https://img.shields.io/github/repo-size/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai) 
+[![github repo size](https://img.shields.io/github/languages/code-size/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai) 
+[![github release](https://img.shields.io/github/release/innovolve-ai/typerefinery.ai)](https://github.com/innovolve-ai/typerefinery.ai)
+[![Visit TypeRefinery.ai](https://img.shields.io/badge/visit-typerefinery.ai-brightgreen)](https://typerefinery.ai/)
+
 ## Run Setup
 
 ```sh
