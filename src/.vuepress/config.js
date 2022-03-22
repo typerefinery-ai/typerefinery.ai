@@ -32,7 +32,7 @@ module.exports = {
   themeConfig: {
     repo: "",
     editLinks: false,
-    docsDir: "",
+    docsDir: "src",
     // search:false,
     editLinkText: "",
     // lastUpdated: false,
