@@ -22,7 +22,7 @@ This template should help get you started developing `Electron` app using `Vue 3
 
 ## Main Window
 
-<img width="400px" src="https://raw.githubusercontent.com/governance-foundation/template-electron-vuex-vuetify/master/public/assets/electron-app.png" />
+<img width="400px" src="/design.png" />
 
 ## Run Setup
 
