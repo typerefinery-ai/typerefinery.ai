@@ -17,6 +17,7 @@ module.exports = {
    
     locales: {
       "/": {
+        selectText: 'Language',
         label: "English",
         // algolia: {
         //   indexName: "typerefinery.ai",
@@ -46,19 +47,6 @@ module.exports = {
             ariaLabel: 'Learn More',
             items: [
               {
-                text: 'API',
-                items: [
-                  {
-                    text: 'CLI',
-                    link: '/api/cli.md'
-                  },
-                  {
-                    text: 'Node',
-                    link: '/api/node.html'
-                  }
-                ]
-              },
-              {
                 text: 'Contributing Guide',
                 items: [
                   {
@@ -84,11 +72,11 @@ module.exports = {
                 items: [
                   {
                     text: 'Migrate from 0.x',
-                    link: '/miscellaneous/migration-guide.html'
+                    link: 'https://github.com/innovolve-ai/typerefinery'
                   },
                   {
                     text: 'Changelog',
-                    link: 'https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md'
+                    link: 'https://github.com/innovolve-ai/typerefinery/releases'
                   }
                 ]
               }
@@ -110,7 +98,7 @@ module.exports = {
         },
       },
       "/hi/": {
-        // selectText: '选择语言',
+        selectText: 'भाषा',
         label: "हिन्दी",
         // editLinkText: '在 GitHub 上编辑此页',
         // serviceWorker: {
@@ -141,6 +129,46 @@ module.exports = {
           {
             text: "विशेषता",
             link: "/hi/feature/",
+          },
+          {
+            text: 'अधिक जानें',
+            ariaLabel: 'Learn More',
+            items: [
+              {
+                text: 'योगदान गाइड',
+                items: [
+                  {
+                    text: 'स्थानीय विकास',
+                    link: '/hi/miscellaneous/local-development.html'
+                  },
+                  {
+                    text: 'डिजाइन अवधारणाएं',
+                    link: '/hi/miscellaneous/design-concepts.html'
+                  },
+                  {
+                    text: 'सामान्य प्रश्न',
+                    link: '/hi/faq/'
+                  },
+                  {
+                    text: 'शब्दकोष',
+                    link: '/hi/miscellaneous/glossary.html'
+                  }
+                ]
+              },
+              {
+                text: 'साधन',
+                items: [
+                  {
+                    text: 'माइग्रेट',
+                    link: 'https://github.com/innovolve-ai/typerefinery'
+                  },
+                  {
+                    text: 'बदलाव का',
+                    link: 'https://github.com/innovolve-ai/typerefinery/releases'
+                  }
+                ]
+              }
+            ]
           },
           {
             text: "GitHub",
