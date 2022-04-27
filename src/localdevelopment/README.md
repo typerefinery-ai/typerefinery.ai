@@ -1,48 +1,18 @@
 ---
 sidebar: auto
 ---
-
-# शुरू करना
-
-## Innovolve
-
-[![build_status](https://github.com/governance-foundation/template-electron-vuex-vuetify/workflows/Build/release/badge.svg)](https://github.com/governance-foundation/template-electron-vuex-vuetify/actions?workflow=Build/release)
-[![Coverage Status](https://coveralls.io/repos/github/governance-foundation/template-electron-vuex-vuetify/badge.svg?branch=master)](https://coveralls.io/github/governance-foundation/template-electron-vuex-vuetify?branch=master)
-[![github license](https://img.shields.io/github/license/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
-[![github issues](https://img.shields.io/github/issues/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
-[![github last commit](https://img.shields.io/github/last-commit/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
-[![github repo size](https://img.shields.io/github/repo-size/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
-[![Gitter](https://badges.gitter.im/governance-foundation/community.svg)](https://gitter.im/governance-foundation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Gitter](https://img.shields.io/badge/forum-Google-orange)](https://groups.google.com/forum/#!forum/governance-foundation)
-
-## Overview
-
-This template should help get you started developing `Electron` app using `Vue 3`, `Vite`, `Vuex` and `primeVue`, and friends.
-
-
-## Main Window
-
-<img width="400px" src="/design.png" />
-
-## Run Setup
-
-```sh
-# clone the project
-git clone https://github.com/governance-foundation/template-electron-vuex-vuetify.git
-
-# enter the project directory
-cd template-electron-vuex-vuetify
-
-# install dependency
-npm install
-
-# develop
-npm run electron:dev
-```
-
+# Local Development
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+
+
+## Recommended Software Setup
+
+- cypress
+- typedb
+- powershell
+- windows terminal
 
 ## Type Support for `.vue` Imports in TS
 
@@ -55,9 +25,6 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -119,6 +86,14 @@ npm run app:build
 ```sh
 npx simple-git-hooks
 ```
+## Directory Structure
+VuePress follows the principle of "Convention is better than configuration". The recommended structure is as follows:
+
+<img width="400px" src="/directory.png" />
+
+Here you will get the components available in source file.
+
+<img width="500px" src="/directory_structure.gif" />
 
 ## Customize configuration
 
