@@ -1,16 +1,14 @@
 
 module.exports = {
   locales: {
-    /* This is where you place your general locale config */
+    /* This is the place where general locale config */
     "/": {
       lang: "en-US",
       title: "TypeRefinery Docs",
-      // description: "Innovolve App-Knowledge Graph",
     },
     "/hi/": {
       lang: "hi",
       title: "टाइप रिफाइनरी डॉक्स",
-      // description: "ऐप-ज्ञान ग्राफ को शामिल करें",
     },
   },
   themeConfig: {
@@ -18,12 +16,7 @@ module.exports = {
     locales: {
       "/": {
         label: "English",
-        // algolia: {
-        //   indexName: "typerefinery.ai",
-        //   apiKey: "5792a907c238f1c51eadbc3816abd9a1",
-        //   appId: "2PR5B0W9C6",
-        //   // If Algolia did not provided you any `appId`, use `BH4D9OD16A` or remove this option
-        // },
+       
         algolia: {
           indexName: "typerefinery.ai",
           apiKey: "5792a907c238f1c51eadbc3816abd9a1",
@@ -38,7 +31,7 @@ module.exports = {
             link: "/guide/",
           },
           {
-            text: "Feature",
+            text: "Features",
             link: "/feature/",
           },
           {
@@ -46,24 +39,11 @@ module.exports = {
             ariaLabel: 'Learn More',
             items: [
               {
-                text: 'API',
-                items: [
-                  {
-                    text: 'CLI',
-                    link: '/api/cli.md'
-                  },
-                  {
-                    text: 'Node',
-                    link: '/api/node.html'
-                  }
-                ]
-              },
-              {
                 text: 'Contributing Guide',
                 items: [
                   {
                     text: 'Local Development',
-                    link: '/miscellaneous/local-development.html'
+                    link: '/localdevelopment/'
                   },
                   {
                     text: 'Design Concepts',
@@ -79,24 +59,12 @@ module.exports = {
                   }
                 ]
               },
-              {
-                text: 'Resources',
-                items: [
-                  {
-                    text: 'Migrate from 0.x',
-                    link: '/miscellaneous/migration-guide.html'
-                  },
-                  {
-                    text: 'Changelog',
-                    link: 'https://github.com/vuejs/vuepress/blob/master/CHANGELOG.md'
-                  }
-                ]
-              }
+            
             ]
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.ai",
+            link: "https://github.com/innovolve-ai/typerefinery.git",
           },
         ],
         sidebar: {
@@ -104,27 +72,15 @@ module.exports = {
             {
               title: "Guide",
               collapsable: false,
-              children: ["", "setup-vue", "directory-vue"],
+              children: ["", "setup-vue" ,],
             },
           ],
         },
       },
       "/hi/": {
-        // selectText: '选择语言',
+        
         label: "हिन्दी",
-        // editLinkText: '在 GitHub 上编辑此页',
-        // serviceWorker: {
-        //   updatePopup: {
-        //     message: "发现新内容可用.",
-        //     buttonText: "刷新"
-        //   }
-        // },
-        // algolia: {
-        //   indexName: "typerefinery.ai",
-        //   apiKey: "5792a907c238f1c51eadbc3816abd9a1",
-        //   appId: "2PR5B0W9C6",
-        //   // If Algolia did not provided you any `appId`, use `BH4D9OD16A` or remove this option
-        // },
+        
         algolia: {
           indexName: "typerefinery.ai",
           apiKey: "5792a907c238f1c51eadbc3816abd9a1",
@@ -139,12 +95,40 @@ module.exports = {
             link: "/hi/guide/",
           },
           {
-            text: "विशेषता",
+            text: "विशेषताएँ",
             link: "/hi/feature/",
           },
           {
+            text: 'अधिक जानकारी',
+            ariaLabel: 'अधिक जानकारी',
+            items: [
+              {
+                text: 'योगदान गाइड',
+                items: [
+                  {
+                    text: 'स्थानीय विकास',
+                    link: "/hi/localdevelopment/"
+                  },
+                  {
+                    text: 'डिजाइन अवधारणाएं',
+                    link: '/hi/miscellaneous/design-concepts.html'
+                  },
+                  {
+                    text: 'सामान्य प्रश्न',
+                    link: '/hi/faq/'
+                  },
+                  {
+                    text: 'शब्दकोष',
+                    link: '/hi/miscellaneous/glossary.html'
+                  }
+                ]
+              },
+            
+            ]
+          },
+          {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.ai",
+            link: "https://github.com/innovolve-ai/typerefinery.git",
           },
         ],
         sidebar: {
@@ -152,7 +136,7 @@ module.exports = {
             {
               title: "मार्गदर्शक",
               collapsable: false,
-              children: ["", "setup-vue", "directory-vue"],
+              children: ["", "setup-vue",],
             },
           ],
         },
