@@ -15,4 +15,6 @@ All of this requires the development of considerable custom code, or very powerf
 interfaces. TypeDB is considerably differentiated from all other knowledge graphs, and has the 
 potential to be a game changer, but it is relatively new and has limited capabilities in its no-code 
 interface (TypeDB WorkBase).
-The Type Explorer is designed as a superior replacement to the Grakn WorkBase
+The Type Explorer is designed as a superior replacement to the Grakn WorkBase.
+
+
