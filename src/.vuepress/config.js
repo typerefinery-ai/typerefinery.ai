@@ -47,7 +47,7 @@ module.exports = {
                   },
                   {
                     text: 'Design Concepts',
-                    link: '/miscellaneous/design-concepts.html'
+                    link: '/design-concepts/'
                   },
                   {
                     text: 'FAQ',
@@ -55,7 +55,7 @@ module.exports = {
                   },
                   {
                     text: 'Glossary',
-                    link: '/miscellaneous/glossary.html'
+                    link: '/glossary/'
                   }
                 ]
               },
@@ -111,7 +111,7 @@ module.exports = {
                   },
                   {
                     text: 'डिजाइन अवधारणाएं',
-                    link: '/hi/miscellaneous/design-concepts.html'
+                    link: '/hi/design-concepts/'
                   },
                   {
                     text: 'सामान्य प्रश्न',
@@ -119,7 +119,7 @@ module.exports = {
                   },
                   {
                     text: 'शब्दकोष',
-                    link: '/hi/miscellaneous/glossary.html'
+                    link: '/hi/glossary/'
                   }
                 ]
               },
