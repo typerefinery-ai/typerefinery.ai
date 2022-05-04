@@ -36,6 +36,17 @@ Here, its shown how the focus button is working in this app.
 
 <img width="800px" src="/splitpanes.gif" />
 
+### Minimise App
+When click on `Close` button then the app will give a popup of `Are you sure want to quit?` and will have option of `Yes, Quit` and `No, Just Minimise`. So, if need to closeapp permanently then click on `Yes,Quit` option or need to run app in background then click on `No, Just Minimise` option.
+
+<img width="800px" src="/minimiseapp.gif" />
+
+This shows after minimise, app is running in background.
+
+<img width="800px" src="/quitapp.gif" />
+
+Here app is closed permanently.
+
 ## Tech Stack
 
 ### Internationalisation/Multilingual
