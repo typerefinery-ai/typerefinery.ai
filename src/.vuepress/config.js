@@ -46,6 +46,10 @@ module.exports = {
                     link: '/localdevelopment/'
                   },
                   {
+                    text: 'Create Articles',
+                    link: '/create_article/'
+                  },
+                  {
                     text: 'Design Concepts',
                     link: '/design-concepts/'
                   },
@@ -108,6 +112,10 @@ module.exports = {
                   {
                     text: 'स्थानीय विकास',
                     link: "/hi/localdevelopment/"
+                  },
+                  {
+                    text: 'लेख बनाएं',
+                    link: '/hi/create_article/'
                   },
                   {
                     text: 'डिजाइन अवधारणाएं',
