@@ -180,3 +180,22 @@ npm remove @types/jest jest ts-jest @vue/vue3-jest @vue/cli-plugin-unit-jest bab
 ```sh
 npm install vitest vue-tsc jsdom start-server-and-test @types/jsdom @types/node @vue/tsconfig @rushstack/eslint-patch @vitejs/plugin-vue concurrently cross-env electron electron-builder wait-on @types/electron-devtools-installer vite --save-dev
 ```
+## Create Videos and GIF
+
+Here [Free Cam](https://www.freescreenrecording.com/) is used to create videos and after that a online converter
+[ezgif](https://ezgif.com/video-to-gif) is used to convert videos to GIF.
+
+
+<img width="800px" src="/freecam_window.png" />
+
+Its the main window of free cam video recorder , after clicking on `New recording` the video recording will get start.
+
+<img width="800px" src="/ezgif_window.png" />
+
+Need to select video in  `Choose file` option from [ezgif] site and `Upload video!` for GIF conversion.
+
+
+
+
+
+
