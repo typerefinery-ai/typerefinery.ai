@@ -1,5 +1,5 @@
-
 module.exports = {
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   locales: {
     /* This is the place where general locale config */
     "/": {
@@ -12,11 +12,10 @@ module.exports = {
     },
   },
   themeConfig: {
-   
     locales: {
       "/": {
         label: "English",
-       
+
         algolia: {
           indexName: "typerefinery.ai",
           apiKey: "5792a907c238f1c51eadbc3816abd9a1",
@@ -35,36 +34,35 @@ module.exports = {
             link: "/feature/",
           },
           {
-            text: 'Learn More',
-            ariaLabel: 'Learn More',
+            text: "Learn More",
+            ariaLabel: "Learn More",
             items: [
               {
-                text: 'Contributing Guide',
+                text: "Contributing Guide",
                 items: [
                   {
-                    text: 'Local Development',
-                    link: '/localdevelopment/'
+                    text: "Local Development",
+                    link: "/localdevelopment/",
                   },
                   {
-                    text: 'Create Articles',
-                    link: '/create_article/'
+                    text: "Create Articles",
+                    link: "/create_article/",
                   },
                   {
-                    text: 'Design Concepts',
-                    link: '/design-concepts/'
+                    text: "Design Concepts",
+                    link: "/design-concepts/",
                   },
                   {
-                    text: 'FAQ',
-                    link: '/faq/'
+                    text: "FAQ",
+                    link: "/faq/",
                   },
                   {
-                    text: 'Glossary',
-                    link: '/glossary/'
-                  }
-                ]
+                    text: "Glossary",
+                    link: "/glossary/",
+                  },
+                ],
               },
-            
-            ]
+            ],
           },
           {
             text: "GitHub",
@@ -76,15 +74,14 @@ module.exports = {
             {
               title: "Guide",
               collapsable: false,
-              children: ["", "setup-vue" ,],
+              children: ["", "setup-vue"],
             },
           ],
         },
       },
       "/hi/": {
-        
         label: "हिन्दी",
-        
+
         algolia: {
           indexName: "typerefinery.ai",
           apiKey: "5792a907c238f1c51eadbc3816abd9a1",
@@ -103,36 +100,35 @@ module.exports = {
             link: "/hi/feature/",
           },
           {
-            text: 'अधिक जानकारी',
-            ariaLabel: 'अधिक जानकारी',
+            text: "अधिक जानकारी",
+            ariaLabel: "अधिक जानकारी",
             items: [
               {
-                text: 'योगदान गाइड',
+                text: "योगदान गाइड",
                 items: [
                   {
-                    text: 'स्थानीय विकास',
-                    link: "/hi/localdevelopment/"
+                    text: "स्थानीय विकास",
+                    link: "/hi/localdevelopment/",
                   },
                   {
-                    text: 'लेख बनाएं',
-                    link: '/hi/create_article/'
+                    text: "लेख बनाएं",
+                    link: "/hi/create_article/",
                   },
                   {
-                    text: 'डिजाइन अवधारणाएं',
-                    link: '/hi/design-concepts/'
+                    text: "डिजाइन अवधारणाएं",
+                    link: "/hi/design-concepts/",
                   },
                   {
-                    text: 'सामान्य प्रश्न',
-                    link: '/hi/faq/'
+                    text: "सामान्य प्रश्न",
+                    link: "/hi/faq/",
                   },
                   {
-                    text: 'शब्दकोष',
-                    link: '/hi/glossary/'
-                  }
-                ]
+                    text: "शब्दकोष",
+                    link: "/hi/glossary/",
+                  },
+                ],
               },
-            
-            ]
+            ],
           },
           {
             text: "GitHub",
@@ -144,7 +140,7 @@ module.exports = {
             {
               title: "मार्गदर्शक",
               collapsable: false,
-              children: ["", "setup-vue",],
+              children: ["", "setup-vue"],
             },
           ],
         },
