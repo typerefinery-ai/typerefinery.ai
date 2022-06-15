@@ -14,7 +14,7 @@ If need to add any extra element in navbar then need to follow these steps-
 
  Here is the directory structure-
 
- <img width="300px" src="/navbarelement.png" />
+ <img width="300px" src="/navbarelements.png" />
 
 Here is the directory structure-
 
@@ -27,7 +27,7 @@ If need to add/create any article then move in `src` folder and then select the 
 
 (e.g. if need to create any article in `guide` folder then go to `src` folder then go to `guide` folder and create article in `README.md` file).
 
-<img width="300px" src="/createarticle.png" />
+<img width="300px" src="/createarticles.png" />
 
 Here is the directory structure-
 
