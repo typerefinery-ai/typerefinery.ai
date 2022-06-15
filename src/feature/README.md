@@ -51,7 +51,8 @@ Here app is closed permanently.
 ## Tech Stack
 
 ### Internationalisation/Multilingual
-the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization. Using the [vue-i18n](https://www.npmjs.com/package/vue-i18n)package, this feature is implemented
+the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization. Using the [vue-i18n](https://www.npmjs.com/package/vue-i18n)package, this feature is
+implemented.
 
 ### PrimeVue
 [PrimeVue](https://www.primefaces.org/primevue/#/setup) is a rich set of open source native components for Vue.
