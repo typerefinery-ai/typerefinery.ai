@@ -186,11 +186,11 @@ Here [Free Cam](https://www.freescreenrecording.com/) is used to create videos a
 [ezgif](https://ezgif.com/video-to-gif) is used to convert videos to GIF.
 
 
-<img width="800px" src="/freecam_window.png" />
+<img width="800px" src="/freecamwindow.png" />
 
 Its the main window of free cam video recorder , after clicking on `New recording` the video recording will get start.
 
-<img width="800px" src="/ezgif_window.png" />
+<img width="800px" src="/ezgifwindow.png" />
 
 Need to select video in  `Choose file` option from [ezgif] site and `Upload video!` for GIF conversion.
 

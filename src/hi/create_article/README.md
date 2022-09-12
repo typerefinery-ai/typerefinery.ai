@@ -10,7 +10,7 @@ sidebar: auto
 - `src` फोल्डर में `.vuepress` फोल्डर में जाएं।
 - `.vuepress` फ़ोल्डर में `confis.js` फ़ाइल पर जाएं और फिर `एनएवी` अनुभाग में तत्व जोड़ें।
 
-<img width="300px" src="/navbarelement.png" />
+<img width="300px" src="/navbarelements.png" />
 
 यहाँ निर्देशिका संरचना है-
 
@@ -21,7 +21,7 @@ sidebar: auto
 यदि कोई लेख जोड़ने/बनाने की आवश्यकता है तो `src` फ़ोल्डर में जाएं और फिर उस फ़ोल्डर का चयन करें जहां कोई लेख बनाने की आवश्यकता है और संबंधित `.md` फ़ाइल में लेख जोड़ें।
 (उदाहरण के लिए यदि 'गाइड' फोल्डर में कोई आर्टिकल बनाने की जरूरत है तो 'src' फोल्डर में जाएं फिर 'गाइड' फोल्डर में जाएं और 'README.md' फाइल में आर्टिकल बनाएं)।
 
-<img width="300px" src="/createarticle.png" />
+<img width="300px" src="/createarticles.png" />
 
 Here is the directory structure-
 

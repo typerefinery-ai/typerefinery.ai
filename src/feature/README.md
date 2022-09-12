@@ -32,7 +32,8 @@ Here, its shown how the focus button is working in this app.
 <img width="800px" src="/focus.gif" />
 
 ### Splitpanes
-[Splitpanes](https://www.npmjs.com/package/splitpanes) is a Vue.js reliable, simple and touch-ready panes splitter / resizer. A SplitPane displays two components, either side by side or one on top of the other. By dragging the divider that appears between the components, the user can specify how much of the split pane's total area goes to each component.
+[Splitpanes](https://www.npmjs.com/package/splitpanes) is a Vue.js reliable, simple and touch-ready panes splitter / resizer. A SplitPane displays two components, either side by side or one on top of the other. By dragging the divider that appears between 
+the components, the user can specify how much of the split pane's total area goes to each component.
 
 <img width="800px" src="/splitpanes.gif" />
 
@@ -50,7 +51,8 @@ Here app is closed permanently.
 ## Tech Stack
 
 ### Internationalisation/Multilingual
-the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization. Using the [vue-i18n](https://www.npmjs.com/package/vue-i18n)package, this feature is implemented
+the process of planning and implementing products and services so that they can easily be adapted to specific local languages and cultures, a process called localization. Using the [vue-i18n](https://www.npmjs.com/package/vue-i18n)package, this feature is
+implemented.
 
 ### PrimeVue
 [PrimeVue](https://www.primefaces.org/primevue/#/setup) is a rich set of open source native components for Vue.
