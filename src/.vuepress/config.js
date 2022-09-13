@@ -45,8 +45,16 @@ module.exports = {
                     link: "/localdevelopment/",
                   },
                   {
-                    text: "Create Articles",
-                    link: "/create_article/",
+                    text: "App Generation",
+                    link: "/app_generation/",
+                  },
+                  {
+                    text: "Update Document",
+                    link: "/update_document/",
+                  },
+                  {
+                    text: "Tech Stack",
+                    link: "/tech_stack/",
                   },
                   {
                     text: "Design Concepts",
@@ -111,8 +119,16 @@ module.exports = {
                     link: "/hi/localdevelopment/",
                   },
                   {
-                    text: "लेख बनाएं",
-                    link: "/hi/create_article/",
+                    text: "ऐप जनरेशन",
+                    link: "/app_generation/",
+                  },
+                  {
+                    text: "दस्तावेज़ अपडेट करें",
+                    link: "/hi/update_document/",
+                  },
+                  {
+                    text: "टेक स्टैक",
+                    link: "/tech_stack/",
                   },
                   {
                     text: "डिजाइन अवधारणाएं",

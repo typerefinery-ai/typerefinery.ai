@@ -2,7 +2,7 @@
 sidebar: auto
 ---
 
-# Create Articles
+# Update Document
 
 ## Add Navbar elements
 
