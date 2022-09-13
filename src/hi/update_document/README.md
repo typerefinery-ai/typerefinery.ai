@@ -2,6 +2,8 @@
 sidebar: auto
 ---
 
+# दस्तावेज़ अपडेट करें
+
 ## नवबार तत्व जोड़ें
 
 यदि नावबार में कोई अतिरिक्त तत्व जोड़ने की आवश्यकता है तो निम्नलिखित चरणों की आवश्यकता है-
@@ -26,7 +28,3 @@ sidebar: auto
 Here is the directory structure-
 
 <img width="800px" src="/addarticle.gif" />
-
-
-
-
