@@ -1,11 +1,27 @@
 ---
 sidebar: auto
 ---
+
 # Local Development
+
+## TypeRefinary -InnovolveApp
+
+[![build_status](https://github.com/governance-foundation/template-electron-vuex-vuetify/workflows/Build/release/badge.svg)](https://github.com/governance-foundation/template-electron-vuex-vuetify/actions?workflow=Build/release)
+[![Coverage Status](https://coveralls.io/repos/github/governance-foundation/template-electron-vuex-vuetify/badge.svg?branch=master)](https://coveralls.io/github/governance-foundation/template-electron-vuex-vuetify?branch=master)
+[![github license](https://img.shields.io/github/license/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
+[![github issues](https://img.shields.io/github/issues/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
+[![github last commit](https://img.shields.io/github/last-commit/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
+[![github repo size](https://img.shields.io/github/repo-size/governance-foundation/template-electron-vuex-vuetify)](https://github.com/governance-foundation/template-electron-vuex-vuetify)
+[![Gitter](https://badges.gitter.im/governance-foundation/community.svg)](https://gitter.im/governance-foundation/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://img.shields.io/badge/forum-Google-orange)](https://groups.google.com/forum/#!forum/governance-foundation)
+
+## Overview
+
+This template should help get you started developing `Electron` app using `Vue 3`, `Vite`, `Vuex` and `primeVue`.
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
 
 ## Recommended Software Setup
 
@@ -24,7 +40,6 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
    1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
    2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
 
 ## Project Setup
 
@@ -86,10 +101,12 @@ npm run app:build
 ```sh
 npx simple-git-hooks
 ```
+
 ## Directory Structure
+
 VuePress follows the principle of "Convention is better than configuration". The recommended structure is as follows:
 
-<img width="400px" src="/directory.png" />
+<img width="300px" src="/directory.png" />
 
 Here you will get the components available in source file.
 
@@ -116,86 +133,3 @@ When you want to create a new release, follow these steps:
 2. Commit and sign that change (`git commit -s -a -m "chore: release v2022.02.20"`)
 3. Tag and sign your commit (`git tag -s -a v2022.02.20 -m "v2022.02.20"`). Make sure your tag name's format is `v{YYYY}.{MM}.{DD}`. Your workflow will use this tag to detect when to create a release
 4. Push your changes to GitHub (git push && git push --tags)
-
-## App Generation
-
-To generate this app from sratch run the following:
-
-### Part 1 - Automated
-
-- Install Vue globally - `npm install -g @vue/cli`
-- Create Vue App `vue create template-electron-vuex-vuetify`
-  - Please pick a preset:
-    - Manually select features
-  - Features (All Yes)
-  - Babel
-    - TypeScript
-    - Progressive Web App (PWA) Support
-    - Router
-    - Vuex
-    - CSS Pre-processors
-    - Linter / Formatter
-    - Unit Testing
-    - E2E Testing
-  - Use class-style component syntax?
-    - Yes
-  - Use Babel alongside TypeScript?
-    - Yes
-  - Use history mode for router?
-    - Yes
-  - Pick a CSS pre-processor:
-    - Sass/SCSS (with dart-sass)
-  - Pick a linter / formatter config:
-    - ESLint + Prettier
-- Pick additional lint features: \* Lint on save
-  - Pick a unit testing solution:
-    - Jest
-  - Pick an E2E testing solution:
-    Cypress
-  - Where do you prefer placing config:
-    - In dedicated config files
-- Add Vuetify UI framework `vue add vuetify`
-  - use `Default`
-
-### Part 2 - Manual steps
-
-- Remove Jest, will be replaced by [Vitest](https://vitest.dev/)
-  - remove test folder
-  - remove dependencies
-
-```sh
-npm remove @types/jest jest ts-jest @vue/vue3-jest @vue/cli-plugin-unit-jest babel-jest @vue/cli-plugin-babel
-```
-
-- Create [Vite template](https://vitejs.dev/guide/#trying-vite-online) for copying Vite config
-
-  - create blank vite-vue app `npm create vite@latest my-vue-app -- --template vue`
-  - copy accross folders `cypress` and `.vscode`
-  - copy acresss all the conig files
-
-- Add Electron, Vitest and Vite
-  - add configs `package.json`, `vite.config.ts`, `electron.js` and `electron/preload.js` follow this [Vite + Vue 3 + electron + TypeScript](https://dev.to/brojenuel/vite-vue-3-electron-5h4o)
-  - add dependencies
-
-```sh
-npm install vitest vue-tsc jsdom start-server-and-test @types/jsdom @types/node @vue/tsconfig @rushstack/eslint-patch @vitejs/plugin-vue concurrently cross-env electron electron-builder wait-on @types/electron-devtools-installer vite --save-dev
-```
-## Create Videos and GIF
-
-Here [Free Cam](https://www.freescreenrecording.com/) is used to create videos and after that a online converter
-[ezgif](https://ezgif.com/video-to-gif) is used to convert videos to GIF.
-
-
-<img width="800px" src="/freecam_window.png" />
-
-Its the main window of free cam video recorder , after clicking on `New recording` the video recording will get start.
-
-<img width="800px" src="/ezgif_window.png" />
-
-Need to select video in  `Choose file` option from [ezgif] site and `Upload video!` for GIF conversion.
-
-
-
-
-
-
