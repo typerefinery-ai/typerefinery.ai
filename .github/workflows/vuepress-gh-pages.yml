@@ -55,12 +55,18 @@ jobs:
       - name: NPM Build
         run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          path: src/.vuepress/dist
+          branch: gh-pages
+          folder: src/.vuepress/dist
+
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v3
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: src/.vuepress/dist
 
   # Deployment job
   deploy:
