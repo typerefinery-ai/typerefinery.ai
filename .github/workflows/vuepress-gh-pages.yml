@@ -70,11 +70,6 @@ jobs:
 
   # Deployment job
   deploy:
-    env:
-      CONFIG: ${{ needs.build.outputs.config }}
-      NODE_ENV: production 
-      APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-      API_KEY: ${{ secrets.API_KEY }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -86,9 +81,20 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
+  # Deployment job
+  index:
+    env:
+      CONFIG: ${{ needs.build.outputs.config }}
+      NODE_ENV: production 
+      APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+      API_KEY: ${{ secrets.API_KEY }}
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
       - name: Manually index site
         env:
           CONFIG: "${{ env.CONFIG }}"
           APPLICATION_ID: "${{ secrets.APPLICATION_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
-        run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
+        run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper
+        
