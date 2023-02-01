@@ -82,7 +82,6 @@ jobs:
 
       - name: Manually index site
         env:
-          CONFIG: "${{ env.CONFIG }}"
           APPLICATION_ID: "${{ secrets.APPLICATION_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
-        run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
+        run: docker run -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
