@@ -1,7 +1,6 @@
 # TypeRefinery.ai
 
-[![Deploy](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/deploy.yml/badge.svg)](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/deploy.yml)
-[![Build](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/build.yml/badge.svg)](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/build.yml)
+[![Deploy to GitHub Pages](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/vuepress-gh-pages.yml/badge.svg)](https://github.com/typerefinery-ai/typerefinery.ai/actions/workflows/vuepress-gh-pages.yml)
 [![github license](https://img.shields.io/github/license/innovolve-ai/typerefinery.ai)](https://github.com/typerefinery-ai/typerefinery.ai)
 [![github issues](https://img.shields.io/github/issues/innovolve-ai/typerefinery.ai)](https://github.com/typerefinery-ai/typerefinery.ai)
 [![github last commit](https://img.shields.io/github/last-commit/innovolve-ai/typerefinery.ai)](https://github.com/typerefinery-ai/typerefinery.ai)
