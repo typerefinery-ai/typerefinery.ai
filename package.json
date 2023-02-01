@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/innovolve-ai/typerefinery.ai.git"
+    "url": "https://github.com/typerefinery-ai/typerefinery.ai.git"
   },
   "scripts": {
     "dev": "vuepress dev src --host 0.0.0.0 --port 80",
