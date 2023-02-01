@@ -64,6 +64,10 @@ jobs:
 
   # Deployment job
   deploy:
+    env:
+      NODE_ENV: production 
+      APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
+      API_KEY: ${{ secrets.API_KEY }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
