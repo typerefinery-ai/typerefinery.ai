@@ -75,10 +75,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-      - name: Sleep for 90 seconds waiting for job 'pages build and deployment' to finish
-        run: sleep 90s
-        shell: bash
-          
       - name: Get config
         run: |
           echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
