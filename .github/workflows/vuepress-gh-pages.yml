@@ -24,10 +24,6 @@ jobs:
   build:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
-    env:
-      NODE_ENV: production 
-      APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-      API_KEY: ${{ secrets.API_KEY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -65,6 +61,7 @@ jobs:
   # Deployment job
   deploy:
     env:
+      CONFIG: ""
       NODE_ENV: production 
       APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
       API_KEY: ${{ secrets.API_KEY }}
