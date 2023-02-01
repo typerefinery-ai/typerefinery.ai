@@ -20,6 +20,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env: 
+  CONFIG: ""
+  
 jobs:  
   build:
     if: "!contains(github.event.head_commit.message, 'skip ci')"
@@ -51,6 +54,11 @@ jobs:
       - name: NPM Build
         run: npm run build
 
+      - name: Get config
+        run: |
+          echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
+          echo "::set-output name=CONFIG::${CONFIG}"
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -61,7 +69,6 @@ jobs:
   # Deployment job
   deploy:
     env:
-      CONFIG: ""
       NODE_ENV: production 
       APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
       API_KEY: ${{ secrets.API_KEY }}
@@ -76,12 +83,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
 
-      - name: Get config
-        run: |
-          echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_ENV
 
       - name: Manually index site
         env:
+          CONFIG: "${{ env.CONFIG }}"
           APPLICATION_ID: "${{ secrets.APPLICATION_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
-        run: docker run -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
+        run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper 
