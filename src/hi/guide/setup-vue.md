@@ -19,7 +19,7 @@
 
 ```sh
 # clone the project
-git clone https://github.com/innovolve-ai/typerefinery.git
+git clone https://github.com/typerefinery-ai/typerefinery.ai.git
 
 # enter the project directory
 cd typerefinery

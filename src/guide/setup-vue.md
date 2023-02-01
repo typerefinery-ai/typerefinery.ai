@@ -19,7 +19,7 @@ This template should help get you started developing `Electron` app using `Vue 3
 
 ```sh
 # clone the project
-git clone https://github.com/innovolve-ai/typerefinery.git
+git clone https://github.com/typerefinery-ai/typerefinery.ai.git
 
 # enter the project directory
 cd typerefinery

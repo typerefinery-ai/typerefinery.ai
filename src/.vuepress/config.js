@@ -66,7 +66,7 @@ module.exports = {
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.git",
+            link: "https://github.com/typerefinery-ai/typerefinery.ai.git",
           },
         ],
         sidebar: {
@@ -132,7 +132,7 @@ module.exports = {
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.git",
+            link: "https://github.com/typerefinery-ai/typerefinery.ai.git",
           },
         ],
         sidebar: {
