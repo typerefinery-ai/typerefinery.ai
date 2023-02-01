@@ -57,7 +57,7 @@ jobs:
         run: npm run build
 
       - name: Get config
-        if: config
+        id: config
         run: |
           echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_OUTPUT
 
