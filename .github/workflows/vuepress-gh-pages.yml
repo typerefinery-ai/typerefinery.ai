@@ -59,7 +59,7 @@ jobs:
       - name: Get config
         id: config
         run: |
-          echo "CONFIG=$(cat ./config.json | jq -r tostring)" >> $GITHUB_OUTPUT
+          echo "config=$(cat ./config.json | jq -r tostring)" >> $GITHUB_OUTPUT
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -97,4 +97,3 @@ jobs:
           APPLICATION_ID: "${{ secrets.APPLICATION_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
         run: docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper
-        
