@@ -74,7 +74,7 @@ module.exports = {
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.git",
+            link: "https://github.com/innovolve-ai",
           },
         ],
         sidebar: {
@@ -148,7 +148,7 @@ module.exports = {
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai/typerefinery.git",
+            link: "https://github.com/innovolve-ai",
           },
         ],
         sidebar: {
