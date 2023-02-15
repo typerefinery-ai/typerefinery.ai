@@ -12,7 +12,7 @@ The typerefinery app's source code available below, you can download and run the
 
 ```sh
 # clone the project
-git clone https://github.com/innovolve-ai/typerefinery.git
+git clone https://github.com/typerefinery-ai/typerefinery.ai.git
 
 # enter the project directory
 cd typerefinery
