@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # CMS ClientLibs Pattern
 
 ## Client-Side Libraries

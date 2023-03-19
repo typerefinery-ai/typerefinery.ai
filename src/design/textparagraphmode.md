@@ -1,7 +1,3 @@
----
-sidebar: auto
----
-
 # Text Paragrpah Mode
 
 Typically when using a Text component you add rich text to a page. If you are adding a lot of text to a page, you may want to use the Text Paragraph Mode. This mode allows you to add multiple paragraphs of text to a page. This is useful for adding a lot of text to a page without having to add a lot of Text components.

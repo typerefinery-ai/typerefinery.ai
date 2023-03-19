@@ -1,3 +1,8 @@
+---
+title: Guide
+sidebar: auto
+---
+
 # Introduction
 
 Knowledge graphs are one of the most important technologies of the 2020s. Gartner predicted that 

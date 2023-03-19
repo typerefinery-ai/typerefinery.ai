@@ -1,3 +1,57 @@
+
+const {
+  glob,
+  globSync,
+  globStream,
+  globStreamSync,
+  Glob,
+} = require('glob')
+const fs = require('fs')
+const sidebar = [];
+
+glob
+  .sync('src/**/*.md')
+  .map((path) => path.replace('src/', ''))
+  .sort()
+  .forEach((path) =>
+    path.split('/').forEach((name, index, array) => {
+      let children = sidebar
+
+      for (let i = 0; i < index; i++) {
+        children = (
+          children.find(
+            (child) => typeof child === 'object' && child.text === array[i]
+          ) || { children: [] }
+        ).children
+      }
+
+      if (name === 'index.md' || name === 'README.md') {
+        children.push(
+          `/${path
+            .replace('.md', '')
+            .replace('index', '')
+            .replace('README', '')}`
+        )
+        return
+      }
+
+      if (name.endsWith('.md')) {
+        children.push(`/${path.replace('.md', '')}`)
+        return
+      }
+
+      const child = children.find(
+        (child) => typeof child === 'object' && child.text === name
+      ) || null
+
+      if (!child) {
+        children.push({ text: name, children: [], collapsible: true })
+      }
+    })
+  )
+
+console.log(JSON.stringify(sidebar));
+
 module.exports = {
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   locales: {
@@ -57,8 +111,8 @@ module.exports = {
                     link: "/tech_stack/",
                   },
                   {
-                    text: "Design Concepts",
-                    link: "/design-concepts/",
+                    text: "Design",
+                    link: "/design/",
                   },
                   {
                     text: "FAQ",
@@ -85,6 +139,13 @@ module.exports = {
               children: ["", "setup-vue"],
             },
           ],
+          "/design/": [
+            {
+              title: "Design",
+              collapsable: false,
+              children: ["", "clientlibs", "textparagraphmode"],
+            },
+          ]
         },
       },
       "/hi/": {
@@ -131,8 +192,8 @@ module.exports = {
                     link: "/tech_stack/",
                   },
                   {
-                    text: "डिजाइन अवधारणाएं",
-                    link: "/hi/design-concepts/",
+                    text: "डिजाइन",
+                    link: "/hi/design/",
                   },
                   {
                     text: "सामान्य प्रश्न",
@@ -162,6 +223,7 @@ module.exports = {
         },
       },
     },
+    docsDir: "src"
   },
   plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
 };
