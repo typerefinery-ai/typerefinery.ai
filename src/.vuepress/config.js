@@ -152,9 +152,9 @@ module.exports = {
               collapsable: false,
               children: [
                 "",
-                "setup-vue",
                 "typerefinery",
                 "architecture",
+                "setup-vue",
               ],
             },
           ],
