@@ -18,5 +18,8 @@
   "license": "Apache v2.0",
   "dependencies": {
     "vuepress": "^1.5.3"
+  },
+  "devDependencies": {
+    "vuepress-plugin-mermaidjs": "^2.0.0-beta.2"
   }
 }

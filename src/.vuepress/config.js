@@ -87,6 +87,10 @@ module.exports = {
             link: "/guide/",
           },
           {
+            text: "Design",
+            link: "/design/",
+          },
+          {
             text: "Features",
             link: "/feature/",
           },
@@ -112,10 +116,6 @@ module.exports = {
                   {
                     text: "Tech Stack",
                     link: "/tech_stack/",
-                  },
-                  {
-                    text: "Design",
-                    link: "/design/",
                   },
                   {
                     text: "FAQ",
@@ -152,7 +152,9 @@ module.exports = {
               collapsable: false,
               children: [
                 "",
-                "setup-vue"
+                "setup-vue",
+                "typerefinery",
+                "architecture",
               ],
             },
           ],
@@ -176,6 +178,10 @@ module.exports = {
           {
             text: "मार्गदर्शक",
             link: "/hi/guide/",
+          },
+          {
+            text: "डिजाइन",
+            link: "/hi/design/",
           },
           {
             text: "विशेषताएँ",
@@ -203,10 +209,6 @@ module.exports = {
                   {
                     text: "टेक स्टैक",
                     link: "/tech_stack/",
-                  },
-                  {
-                    text: "डिजाइन",
-                    link: "/hi/design/",
                   },
                   {
                     text: "सामान्य प्रश्न",
@@ -238,5 +240,8 @@ module.exports = {
     },
     docsDir: "src"
   },
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: [
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+  ],
 };
