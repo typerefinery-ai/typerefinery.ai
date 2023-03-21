@@ -1,9 +1,7 @@
 ---
-sidebar: auto
+title: Design
 ---
 
-# Design Concepts
+# Design
 
 Following pages outline diffrent design concepts that are used in the design.
-
-[[toc]]

@@ -68,6 +68,9 @@ module.exports = {
   themeConfig: {
     locales: {
       "/": {
+        lang: 'en-AU',
+        title: 'TypeRefinery.ai',
+        description: 'TypeRefinery.ai',
         label: "English",
 
         algolia: {
@@ -132,23 +135,33 @@ module.exports = {
           },
         ],
         sidebar: {
-          "/guide/": [
-            {
-              title: "Guide",
-              collapsable: false,
-              children: ["", "setup-vue"],
-            },
-          ],
           "/design/": [
             {
               title: "Design",
               collapsable: false,
-              children: ["", "clientlibs", "textparagraphmode"],
+              children: [
+                "", 
+                "clientlibs",
+                "textparagraphmode"
+              ],
             },
-          ]
+          ],
+          "/guide/": [
+            {
+              title: "Guide",
+              collapsable: false,
+              children: [
+                "",
+                "setup-vue"
+              ],
+            },
+          ],
         },
       },
       "/hi/": {
+        lang: 'en-AU',
+        title: 'TypeRefinery.ai',
+        description: 'TypeRefinery.ai',
         label: "हिन्दी",
 
         algolia: {
