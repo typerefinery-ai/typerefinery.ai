@@ -1,12 +1,20 @@
 # ऐप कैसे प्राप्त करें
 
+## ऐप इंस्टॉल करें
+
+गीथूब रिलीज से अपने ओएस के लिए नवीनतम संस्करण डाउनलोड करें।
+
+[https://github.com/typerefinery-ai/typerefinery/releases/latest](https://github.com/typerefinery-ai/typerefinery/releases/latest)
+
+अगर आपको ऐप पसंद है तो हमें एक स्टार ड्रॉप करना न भूलें। हम किसी भी प्रतिक्रिया और योगदान का स्वागत करते हैं।
+
 ## स्रोत कोड डाउनलोड करें
 
-टाइपरिफाइनरी ऐप का सोर्स कोड नीचे उपलब्ध है, आप ऐप को आसानी से डाउनलोड और चला सकते हैं।
+नीचे रिफाइनरी ऐप का सोर्स कोड उपलब्ध है, आप ऐप को आसानी से डाउनलोड और चला सकते हैं।
 
-[Source Code (zip)](https://github.com/innovolve-ai/typerefinery/archive/refs/tags/v2022.9.12.zip)
+अगर आपको ऐप पसंद है तो हमें एक स्टार ड्रॉप करना न भूलें। हम किसी भी प्रतिक्रिया और योगदान का स्वागत करते हैं।
 
-[Source Code (tar.gz)](https://github.com/innovolve-ai/typerefinery/archive/refs/tags/v2022.9.12.tar.gz)
+[https://github.com/typerefinery-ai/typerefinery/releases/latest](https://github.com/typerefinery-ai/typerefinery/releases/latest)
 
 ## सेटअप चलाएं
 
