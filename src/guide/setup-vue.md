@@ -1,12 +1,20 @@
 # How to get the app
 
+## Install the app
+
+Download the latest version for your OS from github releases.
+
+[https://github.com/typerefinery-ai/typerefinery/releases/latest](https://github.com/typerefinery-ai/typerefinery/releases/latest)
+
+Don't forget to drops us a star if you like the app. We welcome any feedback and contributions.
+
 ## Download Source code
 
 The typerefinery app's source code available below, you can download and run the app easily.
 
-[Source Code (zip)](https://github.com/innovolve-ai/typerefinery/archive/refs/tags/v2022.9.12.zip)
+Don't forget to drops us a star if you like the app. We welcome any feedback and contributions.
 
-[Source Code (tar.gz)](https://github.com/innovolve-ai/typerefinery/archive/refs/tags/v2022.9.12.tar.gz)
+[https://github.com/typerefinery-ai/typerefinery/releases/latest](https://github.com/typerefinery-ai/typerefinery/releases/latest)
 
 ## Run Setup
 
