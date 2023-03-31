@@ -154,7 +154,7 @@ module.exports = {
                 "",
                 "typerefinery",
                 "architecture",
-                "setup-vue",
+                "setup",
               ],
             },
           ],
@@ -232,7 +232,7 @@ module.exports = {
             {
               title: "मार्गदर्शक",
               collapsable: false,
-              children: ["", "setup-vue"],
+              children: ["", "setup"],
             },
           ],
         },
