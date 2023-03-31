@@ -94,8 +94,4 @@ jobs:
           APPLICATION_ID: "${{ secrets.APPLICATION_ID }}"
           API_KEY: "${{ secrets.API_KEY }}"
         run: |
-          docker run \
-            --env ALGOLIA_APP_ID=${APPLICATION_ID} \
-            --env ALGOLIA_API_KEY=${API_KEY} \
-            --env "CONFIG=$(cat ./config.json | jq -r tostring)" \
-            algolia/docsearch-scraper
+          docker run -e CONFIG -e APPLICATION_ID -e API_KEY algolia/docsearch-scraper
