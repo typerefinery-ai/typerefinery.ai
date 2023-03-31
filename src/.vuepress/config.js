@@ -75,8 +75,8 @@ module.exports = {
 
         algolia: {
           indexName: "typerefinery.ai",
-          apiKey: "5792a907c238f1c51eadbc3816abd9a1",
-          appId: "2PR5B0W9C6",
+          apiKey: "a0a0d5c5915a4c610596d07386d5ae97",
+          appId: "RUJ2HHX41L",
           algoliaOptions: {
             facetFilters: ["tags:v1"],
           },
@@ -168,8 +168,8 @@ module.exports = {
 
         algolia: {
           indexName: "typerefinery.ai",
-          apiKey: "5792a907c238f1c51eadbc3816abd9a1",
-          appId: "2PR5B0W9C6",
+          apiKey: "a0a0d5c5915a4c610596d07386d5ae97",
+          appId: "RUJ2HHX41L",
           algoliaOptions: {
             facetFilters: ["tags:v1"],
           },
