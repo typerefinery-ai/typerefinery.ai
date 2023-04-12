@@ -55,6 +55,7 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
+    ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src 'self'; script-src 'self' https://static.highlight.io; worker-src: blob: https://static.highlight.io; connect-src https://pub.highlight.run;" }],
     ["script", { src: "https://code.jquery.com/jquery-3.4.1.min.js" }],
     ["script", { defer: "defer", src: "https://unpkg.com/highlight.run" }],
     ["script", { defer: "defer" }, `
