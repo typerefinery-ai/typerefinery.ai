@@ -53,7 +53,31 @@ glob
 console.log(JSON.stringify(sidebar));
 
 module.exports = {
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    ["script", {}, `
+      var _hmt = _hmt || []; 
+      (function() { 
+      var hm = document.createElement("script"); 
+      hm.src = "https://unpkg.com/highlight.run"; 
+      var s = document.getElementsByTagName("script"”")[0]; 
+      s.parentNode.insertBefore(hm, s); 
+      })(); 
+    `],
+    ["script", {}, `
+      H.init('qe9jjpg1', { // Get your project ID from https://app.highlight.io/setup
+        environment: 'production',
+        version: 'typerefinery.ai',
+        networkRecording: {
+            enabled: true,
+            recordHeadersAndBody: true,
+            urlBlocklist: [
+                // insert urls you don't want to record here
+            ],
+        },
+      });
+    `]
+  ],
   locales: {
     /* This is the place where general locale config */
     "/": {
