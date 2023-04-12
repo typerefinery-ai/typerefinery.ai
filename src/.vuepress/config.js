@@ -55,7 +55,7 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    ["script", { src: "https://code.jquery.com/jquery-3.4.1.min.js" }]
+    ["script", { src: "https://code.jquery.com/jquery-3.4.1.min.js" }],
     ["script", { defer: "defer", src: "https://unpkg.com/highlight.run" }],
     ["script", { defer: "defer" }, `
       (function() { 
