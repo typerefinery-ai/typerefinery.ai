@@ -55,7 +55,7 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    ["script", {}, `
+    ["script", { defer: "defer" }, `
       var _hmt = _hmt || []; 
       (function() { 
       var hm = document.createElement("script"); 
@@ -64,7 +64,7 @@ module.exports = {
       s.parentNode.insertBefore(hm, s); 
       })(); 
     `],
-    ["script", {}, `
+    ["script", { defer: "defer" }, `
       (function() { 
       var script = document.createElement("script"); 
       script.src = "/scripts/highlight.js";
