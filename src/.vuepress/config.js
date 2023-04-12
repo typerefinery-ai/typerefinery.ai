@@ -55,15 +55,8 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    ["script", { defer: "defer" }, `
-      var _hmt = _hmt || []; 
-      (function() { 
-      var hm = document.createElement("script"); 
-      hm.src = "https://unpkg.com/highlight.run"; 
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s); 
-      })(); 
-    `],
+    ["script", { src: "https://code.jquery.com/jquery-3.4.1.min.js" }]
+    ["script", { defer: "defer", src: "https://unpkg.com/highlight.run" }],
     ["script", { defer: "defer" }, `
       (function() { 
       var script = document.createElement("script"); 
