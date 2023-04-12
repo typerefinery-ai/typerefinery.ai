@@ -55,8 +55,8 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    // ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *; worker-src: 'self' 'unsafe-eval'; connect-src" }],
-    ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src 'self'; script-src 'self' https://static.highlight.io; worker-src 'self' blob: https://static.highlight.io; connect-src https://pub.highlight.run;" }],
+    ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *; worker-src: 'self' 'unsafe-eval' blob:; connect-src 'self' 'unsafe-eval';" }],
+    // ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; script-src 'self' https://static.highlight.io; worker-src 'self' blob: https://static.highlight.io; connect-src https://pub.highlight.run;" }],
     ["script", { src: "https://code.jquery.com/jquery-3.4.1.min.js" }],
     ["script", { defer: "defer", src: "https://unpkg.com/highlight.run" }],
     ["script", { defer: "defer" }, `
