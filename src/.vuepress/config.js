@@ -55,6 +55,7 @@ console.log(JSON.stringify(sidebar));
 module.exports = {
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
+    // see this https://csp-evaluator.withgoogle.com/ to test your CSP ("Content-Security-Policy")
     ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; img-src * 'self' data: https:; script-src 'self' https://static.highlight.io; worker-src 'self' https://static.highlight.io blob:; connect-src 'self' https://pub.highlight.run; object-src 'none';" }],
     // ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline' *; worker-src 'self' 'unsafe-eval' blob:; connect-src 'self' 'unsafe-eval';" }],
     // ["meta", { "http-equiv": "Content-Security-Policy", content: "default-src *; script-src 'self' https://static.highlight.io; worker-src 'self' blob: https://static.highlight.io; connect-src https://pub.highlight.run;" }],
