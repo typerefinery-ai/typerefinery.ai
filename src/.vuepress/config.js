@@ -65,17 +65,11 @@ module.exports = {
       })(); 
     `],
     ["script", {}, `
-      H.init('qe9jjpg1', { // Get your project ID from https://app.highlight.io/setup
-        environment: 'production',
-        version: 'typerefinery.ai',
-        networkRecording: {
-            enabled: true,
-            recordHeadersAndBody: true,
-            urlBlocklist: [
-                // insert urls you don't want to record here
-            ],
-        },
-      });
+      (function() { 
+      var script = document.createElement("script"); 
+      script.src = "/scripts/highlight.js";
+      setTimeout(() => document.body.append(script))
+      })(); 
     `]
   ],
   locales: {
