@@ -67,7 +67,9 @@ module.exports = {
       script.src = "/scripts/highlight.js";
       setTimeout(() => document.body.append(script))
       })(); 
-    `]
+    `],
+    ["script", { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-67E8KVWGL7' }],
+    ["script", {}, ["window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-67E8KVWGL7');"]],
   ],
   locales: {
     /* This is the place where general locale config */
