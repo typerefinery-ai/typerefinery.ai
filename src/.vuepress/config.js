@@ -241,7 +241,7 @@ module.exports = {
           },
           {
             text: "GitHub",
-            link: "https://github.com/innovolve-ai",
+            link: "https://github.com/typerefinery-ai",
           },
         ],
         sidebar: {

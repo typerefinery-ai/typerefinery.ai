@@ -8,7 +8,7 @@ sidebar: auto
 
 ### Main Window
 
-When you open InnovolveApp for the first time, the Start Screen will appear like this.
+When you open TypeRefinery.ai for the first time, the Start Screen will appear like this.
 
 <img width="800px" src="/mainwindow.png" />
 

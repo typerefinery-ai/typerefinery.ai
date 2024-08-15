@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /innovolve.png
-tagline: Innovolve App-Knowledge Graph
+heroImage: /logo.png
+tagline: We are building next generation Experience for Knowledge Graphs.
 actionText: Quick Start →
 actionLink: /guide/
 features:

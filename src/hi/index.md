@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /innovolve.png
+heroImage: /logo.png
 tagline: ऐप-ज्ञान ग्राफ को शामिल करें
 actionText: जल्दी शुरू →
 actionLink: /guide/
